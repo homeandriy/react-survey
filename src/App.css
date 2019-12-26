@@ -1,7 +1,9 @@
-.App {
-  text-align: center;
-}
+@import '~antd/dist/antd.css';
 
+.ant-card-head-title {
+  font-size: 24px;
+  font-weight: bold
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

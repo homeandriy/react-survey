@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Button, Card, Icon} from "antd";
+import {api} from "./REST/api";
+import {Answer} from "./components/answers";
+import {useAnswers} from "./useHooks/useAnswers";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const data = api.get();
+    const {questions} = data;
+    const {sendAnswers} = useAnswers();
+    const renderedEl = questions.map((el) => {
+       return (
+           <Card key={el.id} type="inner" title={el.description} >
+               <Answer questionId={el.id} answers={el.answers}/>
+           </Card>
+       )
+    });
+    return (
+        <div className="App">
+            {renderedEl}
+
+            <Button onClick={sendAnswers} type='danger' block>
+                <Icon type="check-circle"  />
+                Завершити</Button>
+        </div>
+    );
 }
 
 export default App;
