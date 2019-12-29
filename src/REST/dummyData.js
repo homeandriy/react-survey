@@ -1,127 +1,167 @@
 export const
     dummyData = {
-        "id": 9,
+        "id": 5,
         "type": "feedback",
-        "type_name": "Анкета",
-        "email": "maksym.bukach@volia.com",
-        "user_name": "Максим Букач",
-        "title": "fdsgfsagfdr",
-        "description": "fdsfdsafddasfdas",
-        "logo_src": "http://survey-admin.volia.loc/img/logo.png",
-        "questions": [
-            {
-                "id": 9,
-                "description": "Як вам цей Рік?",
-                "img_src": "",
-                "answers": [
-                    {
-                        "id": 14,
-                        "value": "fdsfdsafdsa",
-                        "type": 2,
-                        "img_src": ""
-                    },
-                    {
-                        "id": 15,
-                        "value": "fdsfdsafdsa",
-                        "type": 3,
-                        "img_src": ""
-                    }
-                ]
-            },
-            {
-                "id": 10,
-                "description": "Скільки років діду морозу??",
-                "img_src": "",
-                "answers": [
-                    {
-                        "id": 16,
-                        "value": "fdsfdsafdsa",
-                        "type": 2,
-                        "img_src": ""
-                    },
-                    {
-                        "id": 17,
-                        "value": "fdsfdsafdsa",
-                        "type": 3,
-                        "img_src": ""
-                    }
-                ]
-            },
-            {
-                "id": 11,
-                "description": "Снігурка існує?",
-                "img_src": "",
-                "answers": [
-                    {
-                        "id": 18,
-                        "value": "fdsfdsafdsa",
-                        "type": 2,
-                        "img_src": ""
-                    },
-                    {
-                        "id": 19,
-                        "value": "fdsfdsafdsa",
-                        "type": 3,
-                        "img_src": ""
-                    }
-                ]
-            },
-            {
-                "id": 12,
-                "description": "Скільки Вам років?",
-                "img_src": "",
-                "answers": [
-                    {
-                        "id": 20,
-                        "value": "fdsfdsafdsa",
-                        "type": 2,
-                        "img_src": ""
-                    },
-                    {
-                        "id": 21,
-                        "value": "fdsfdsafdsa",
-                        "type": 3,
-                        "img_src": ""
-                    }
-                ]
-            },
-            {
-                "id": 14,
-                "description": "Коли на курорт?",
-                "img_src": "",
-                "answers": [
-                    {
-                        "id": 22,
-                        "value": "fdsfdsafdsa",
-                        "type": 2,
-                        "img_src": ""
-                    },
-                    {
-                        "id": 23,
-                        "value": "fdsfdsafdsa",
-                        "type": 3,
-                        "img_src": ""
-                    }
-                ]
-            },
-            {
-                "id": 15,
-                "description": "Будете брати відпустку?",
-                "img_src": "",
-                "answers": [
-                    {
-                        "id": 24,
-                        "value": "fdsfdsafdsa",
-                        "type": 2,
-                        "img_src": ""
-                    },
-                    {
-                        "id": 25,
-                        "value": "fdsfdsafdsa",
-                        "type": 3,
-                        "img_src": ""
-                    }
-                ]
-            },
-        ]
+        "type_name": "\u0410\u043d\u043a\u0435\u0442\u0430",
+        "email": "admin@example.com",
+        "user_name": "Admin",
+        "title": "Home volia ankets test",
+        "description": "Descriptoin",
+        "logo_src": "https:\/\/survey-admin-test.volia.com\/img\/logo.png",
+        "questions": [{
+            "id": 13,
+            "description": "1.\t\u041c\u043d\u0435 \u043d\u0440\u0430\u0432\u0438\u0442\u0441\u044f, \u0447\u0442\u043e \u0435\u0441\u0442\u044c \u0434\u0430\u0439\u0434\u0436\u0435\u0441\u0442 \u0441 \u043d\u043e\u0432\u043e\u0441\u0442\u044f\u043c\u0438?",
+            "img_src": "",
+            "answers": [{"id": 31, "value": "\u0414\u0430", "type": 2, "img_src": ""}, {
+                "id": 32,
+                "value": "\u041d\u0435\u0442",
+                "type": 2,
+                "img_src": ""
+            }, {
+                "id": 33,
+                "value": "\u0425\u043e\u0447\u0443 \u0447\u0442\u043e-\u0442\u043e \u043d\u043e\u0432\u0435\u043d\u044c\u043a\u043e\u0435",
+                "type": 2,
+                "img_src": ""
+            }]
+        }, {
+            "id": 14,
+            "description": "\u041a\u0430\u043a\u043e\u0439 \u0431\u044b \u0444\u043e\u0440\u043c\u0430\u0442\/\u0442\u0438\u043f \u043d\u043e\u0432\u043e\u0441\u0442\u0435\u0439 \u044f \u0445\u043e\u0442\u0435\u043b \u0431\u044b \u0432\u0438\u0434\u0435\u0442\u044c?",
+            "img_src": "",
+            "answers": [{
+                "id": 34,
+                "value": "\u041e\u043f\u0438\u0448\u0456\u0442\u044c \u0442\u0443\u0442",
+                "type": 3,
+                "img_src": ""
+            }]
+        }, {
+            "id": 15,
+            "description": "\u0425\u043e\u0442\u0435\u043b\u043e\u0441\u044c \u0431\u044b \u0432\u0438\u0434\u0435\u0442\u044c \u043d\u0430 \u043f\u043e\u0441\u0442\u043e\u044f\u043d\u043d\u043e\u0439 \u043e\u0441\u043d\u043e\u0432\u0435 \u0440\u0443\u0431\u0440\u0438\u043a\u0443\u2026?",
+            "img_src": "",
+            "answers": [{
+                "id": 35,
+                "value": "\u0422\u041e\u041f-\u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440 \u043e\u0442\u0432\u0435\u0447\u0430\u0435\u0442 \u043d\u0430 \u0432\u043e\u043f\u0440\u043e\u0441\u044b",
+                "type": 2,
+                "img_src": ""
+            }, {
+                "id": 36,
+                "value": "\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0435 \u0447\u0435\u043b\u0435\u043d\u0434\u0436\u0438",
+                "type": 2,
+                "img_src": ""
+            }, {
+                "id": 37,
+                "value": "\u042d\u043a\u043e-\u0447\u0435\u043b\u0435\u043d\u0434\u0436\u0438",
+                "type": 2,
+                "img_src": ""
+            }, {
+                "id": 38,
+                "value": "\u0421\u0442\u0430\u0442\u044c\u0438 \u043d\u0430 \u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u043e\u043c",
+                "type": 2,
+                "img_src": ""
+            }, {
+                "id": 39,
+                "value": "\u041e\u0434\u0438\u043d \u0434\u0435\u043d\u044c \u0438\u0437 \u0436\u0438\u0437\u043d\u0438 \u0441\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a\u0430 \u0444\u0443\u043d\u043a\u0446\u0438\u0438",
+                "type": 2,
+                "img_src": ""
+            }]
+        }, {
+            "id": 16,
+            "description": "\u0425\u043e\u0442\u0435\u043b\u043e\u0441\u044c \u0431\u044b, \u0447\u0442\u043e\u0431\u044b \u0441\u0443\u043c\u043c\u0430 \u0412\u043e\u043b\u044f\u0440\u043e\u0432, \u043a\u043e\u0442\u043e\u0440\u0443\u044e \u043c\u043e\u0436\u043d\u043e \u0434\u0430\u0440\u0438\u0442\u044c \u0431\u044b\u043b\u0430 \u0431\u043e\u043b\u044c\u0448\u0435?",
+            "img_src": "",
+            "answers": [{"id": 40, "value": "\u0414\u0430", "type": 2, "img_src": ""}, {
+                "id": 41,
+                "value": "\u041d\u0435\u0442",
+                "type": 2,
+                "img_src": ""
+            }]
+        }, {
+            "id": 17,
+            "description": "\u0425\u043e\u0447\u0443, \u0447\u0442\u043e\u0431\u044b \u043c\u043e\u0436\u043d\u043e \u0431\u044b\u043b\u043e \u043f\u043e\u0434\u0430\u0440\u0438\u0442\u044c \u043f\u043e\u0434\u0430\u0440\u043e\u043a \u043a\u043e\u043b\u043b\u0435\u0433\u0435 (\u043a\u0443\u043f\u0438\u043b \u0441\u0430\u043c \u2013 \u043e\u0442\u0434\u0430\u043b \u0434\u0440\u0443\u0433\u0443)?",
+            "img_src": "",
+            "answers": [{"id": 42, "value": "\u0414\u0430", "type": 2, "img_src": ""}, {
+                "id": 43,
+                "value": "\u041d\u0435\u0442",
+                "type": 2,
+                "img_src": ""
+            }]
+        }, {
+            "id": 18,
+            "description": "\u0427\u0442\u043e \u043d\u0435 \u043d\u0440\u0430\u0432\u0438\u0442\u0441\u044f \u0432 \u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0438 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442-\u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0430 (\u0434\u043e\u043b\u0433\u043e \u0438\u0434\u0435\u0442 \u043f\u043e\u0434\u0430\u0440\u043e\u043a, \u043d\u0435\u0443\u0434\u043e\u0431\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u2026 )?",
+            "img_src": "",
+            "answers": [{
+                "id": 47,
+                "value": "\u041d\u0430\u043f\u0438\u0441\u0430\u0442\u044c",
+                "type": 3,
+                "img_src": ""
+            }]
+        }, {
+            "id": 19,
+            "description": "\u0427\u0442\u043e \u0431\u044b \u0445\u043e\u0442\u0435\u043b\u0438 \u0432\u0438\u0434\u0435\u0442\u044c \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442-\u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0435?",
+            "img_src": "",
+            "answers": [{
+                "id": 46,
+                "value": "\u041d\u0430\u043f\u0438\u0441\u0430\u0442\u044c",
+                "type": 3,
+                "img_src": ""
+            }]
+        }, {
+            "id": 20,
+            "description": "\u0417\u0430 \u043a\u0430\u043a\u0438\u0435 \u0435\u0449\u0435 \u0430\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u0438 \u0432\u044b \u0431\u044b \u0445\u043e\u0442\u0435\u043b\u0438 \u043f\u043e\u043b\u0443\u0447\u0430\u0442\u044c \u0412\u043e\u043b\u044f\u0440\u044b?",
+            "img_src": "",
+            "answers": [{"id": 44, "value": "\u0444", "type": 3, "img_src": ""}]
+        }, {
+            "id": 21,
+            "description": "\u041d\u0440\u0430\u0432\u0438\u0442\u0441\u044f \u043a\u043e\u043d\u0442\u0435\u043d\u0442 \u043d\u0430 \u043a\u0430\u0440\u044c\u0435\u0440\u043d\u044b\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0447\u043a\u0430\u0445?",
+            "img_src": "",
+            "answers": [{"id": 48, "value": "\u0414\u0430", "type": 2, "img_src": ""}, {
+                "id": 49,
+                "value": "\u041d\u0435\u0442",
+                "type": 2,
+                "img_src": ""
+            }, {"id": 50, "value": "50\/50", "type": 2, "img_src": ""}]
+        }, {
+            "id": 22,
+            "description": "\u041c\u043e\u0439 \u043b\u044e\u0431\u0438\u043c\u044b\u0439 \u0442\u0438\u043f \u043d\u043e\u0432\u043e\u0441\u0442\u0435\u0439?",
+            "img_src": "",
+            "answers": [{
+                "id": 51,
+                "value": "\u0421\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u043d\u044b\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f",
+                "type": 2,
+                "img_src": ""
+            }, {
+                "id": 52,
+                "value": "\u0410\u043d\u043e\u043d\u0441\u044b \u0444\u0438\u043b\u044c\u043c\u043e\u0432 \u043d\u0430 \u043a\u0430\u043d\u0430\u043b\u0430\u0445 \u0421\u0438\u043d\u0435+",
+                "type": 2,
+                "img_src": ""
+            }, {
+                "id": 53,
+                "value": "\u041e \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0430\u0445",
+                "type": 2,
+                "img_src": ""
+            }, {
+                "id": 54,
+                "value": "\u0424\u0430\u043d\u043e\u0432\u044b\u0435 \u0441\u0442\u0430\u0442\u044c\u0438",
+                "type": 2,
+                "img_src": ""
+            }, {
+                "id": 55,
+                "value": "\u0427\u0435\u043b\u0435\u043d\u0434\u0436\u0438",
+                "type": 2,
+                "img_src": ""
+            }, {
+                "id": 56,
+                "value": "\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0433\u0435\u0439\u043c\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u0438",
+                "type": 2,
+                "img_src": ""
+            }, {"id": 57, "value": "\u0422\u0435\u0441\u0442\u044b", "type": 2, "img_src": ""}, {
+                "id": 58,
+                "value": "\u0418\u0441\u0442\u043e\u0440\u0438\u0438 \u0443\u0441\u043f\u0435\u0445\u0430",
+                "type": 2,
+                "img_src": ""
+            }, {"id": 59, "value": "\u0421EO \u0432\u043b\u043e\u0433\u0438", "type": 2, "img_src": ""}, {
+                "id": 60,
+                "value": "\u0418\u043d\u0442\u0435\u0440\u0432\u044c\u044e",
+                "type": 2,
+                "img_src": ""
+            }]
+        }]
     };
