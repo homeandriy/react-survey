@@ -6,11 +6,13 @@ export const RadioAnswer = ({answers, questionId}) => {
 
     const {addNewAnswer} = useAnswers();
     const answerHandler = (val, questionId, answerId) => {
-        console.log(val, questionId, answerId);
+        // console.log(val, questionId, answerId);
         addNewAnswer({
             value: val,
             question: questionId,
-            answer: answerId
+            answer: answerId,
+            isCheckbox : false,
+            custom : false
         });
 
     };

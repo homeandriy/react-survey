@@ -5,18 +5,20 @@ import {Scale} from "../scale";
 import {Bool} from "../boolean";
 import {useAnswers} from "../../useHooks/useAnswers";
 import {RadioAnswer} from "../radioAnswers";
+import {ChekcBoxAnswer} from "../checkBoxAnswers";
 
-export const Answer = ({answers, questionId}) => {
+export const Answer = ({answers, questionId, isCheckbox}) => {
 
     const {addNewAnswer} = useAnswers();
-    const answerHandler = (val, questionId, answerId) => {
-        console.log(val, questionId, answerId);
+    const answerHandler = (val, questionId, answerId, custom) => {
+        // console.log(val, questionId, answerId, custom);
         addNewAnswer({
             value : val,
             question : questionId,
-            answer : answerId
+            answer : answerId,
+            isCheckbox : false,
+            custom : custom
         });
-
     };
 
     const radioStyle = {
@@ -27,7 +29,7 @@ export const Answer = ({answers, questionId}) => {
     // HARDCODE if answer type == 2
     let renderedAnswers = [];
     if(answers[0]['type'] === 2) {
-        renderedAnswers = <RadioAnswer answers={answers} questionId={questionId}/>
+        renderedAnswers = isCheckbox === 0 ? <RadioAnswer answers={answers} questionId={questionId}/> : <ChekcBoxAnswer answers={answers} questionId={questionId}/>
     }
     else {
         renderedAnswers = answers.map((el) => {
@@ -38,13 +40,9 @@ export const Answer = ({answers, questionId}) => {
                 case 1 :
                     return <Bool key={el.id} {...el} />;
                     break;
-                case 2 :
-                    return <Radio key={el.id} onChange={(event) => answerHandler(event.target.value, questionId, el.id)}
-                                  name={questionId} style={radioStyle} value={el.value}>{el.value}</Radio>;
-                    break;
                 case 3 :
                     return <TextArea key={el.id} type='text'
-                                     onChange={(event) => answerHandler(event.target.value, questionId, el.id)}/>;
+                                     onChange={(event) => answerHandler(event.target.value, questionId, el.id, true)}/>;
                     break;
                 default :
                     return '';
